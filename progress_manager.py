@@ -46,7 +46,11 @@ def input_contents():
     else:
         q.append(ac.url_to_problem_name("https://atcoder.jp/contests/abc005/tasks/abc005_1")+" (サンプル問題5)")
         u.append("https://atcoder.jp/contests/abc005/tasks/abc005_1")
-    s.append(st.text_input("受講者のAtCoder IDを入力してください(1人目)"))
+    student1=st.text_input("受講者のAtCoder IDを入力してください(1人目)")
+    if student1!="":
+        s.append(student1)
+    else:
+        s.append("chokudai")
     s.append(st.text_input("受講者のAtCoder IDを入力してください(2人目)"))
     s.append(st.text_input("受講者のAtCoder IDを入力してください(3人目)"))
 

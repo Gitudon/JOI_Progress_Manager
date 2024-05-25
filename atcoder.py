@@ -41,6 +41,6 @@ def get_result(url, data):
         if d["contest_id"] == contest_name and d["problem_id"] == problem_name:
             result.append(d["result"])
     if result==[]:
-        return ""
+        return "NOT FOUND"
     final_result = result[-1]
     return final_result

@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import atcoder as ac
 
-q=["Q1", "Q2", "Q3", "Q4", "Q5"]
+q=[]
 u=[]
 s=[]
 
@@ -12,19 +12,19 @@ def message():
 def input_contents():
     global q, s, u
     url1=st.text_input("問題ページのURLを入力してください(1問目)")
-    q[0]=ac.url_to_problem_name(url1)
+    q.append(ac.url_to_problem_name(url1))
     u.append(url1)
     url2=st.text_input("問題ページのURLを入力してください(2問目)")
-    q[1]=ac.url_to_problem_name(url2)
+    q.append(ac.url_to_problem_name(url2))
     u.append(url2)
     url3=st.text_input("問題ページのURLを入力してください(3問目)")
-    q[2]=ac.url_to_problem_name(url3)
+    q.append(ac.url_to_problem_name(url3))
     u.append(url3)
     url4=st.text_input("問題ページのURLを入力してください(4問目)")
-    q[3]=ac.url_to_problem_name(url4)
+    q.append(ac.url_to_problem_name(url4))
     u.append(url4)
     url5=st.text_input("問題ページのURLを入力してください(5問目)")
-    q[4]=ac.url_to_problem_name(url5)
+    q.append(ac.url_to_problem_name(url5))
     u.append(url5)
     s.append(st.text_input("受講者のAtCoder IDを入力してください(1人目)"))
     s.append(st.text_input("受講者のAtCoder IDを入力してください(2人目)"))
@@ -41,12 +41,16 @@ def addelement(df):
         for url in u:
             buf.append(ac.get_result(url, data))
         df[s[i]]=buf
-    return df 
+    return df
 
 def makegraph():
     name='問題名'
+    element=[]
+    for question in q:
+        if question!="":
+            element.append(question)
     df=pd.DataFrame({
-        name: [q[0], q[1], q[2], q[3], q[4]]
+        name: element
     })
     df=addelement(df)
     df= df.set_index(name)

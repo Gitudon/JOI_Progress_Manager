@@ -29,6 +29,8 @@ def get_result_json(user_id):
 
 def get_result(url, data):
     # urlからcontest_nameとproblem_nameを取得する
+    if url=="":
+        return ""
     parts = url.split("/")
     if len(parts) < 7:
         return ""

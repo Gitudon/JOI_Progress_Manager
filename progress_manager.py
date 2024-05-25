@@ -12,20 +12,40 @@ def message():
 def input_contents():
     global q, s, u
     url1=st.text_input("問題ページのURLを入力してください(1問目)")
-    q.append(ac.url_to_problem_name(url1))
-    u.append(url1)
+    if url1!="":
+        q.append(ac.url_to_problem_name(url1))
+        u.append(url1)
+    else:
+        q.append(ac.url_to_problem_name("https://atcoder.jp/contests/abc001/tasks/abc001_1")+" (サンプル問題1)")
+        u.append("https://atcoder.jp/contests/abc001/tasks/abc001_1")
     url2=st.text_input("問題ページのURLを入力してください(2問目)")
-    q.append(ac.url_to_problem_name(url2))
-    u.append(url2)
+    if url2!="":
+        q.append(ac.url_to_problem_name(url2))
+        u.append(url2)
+    else:
+        q.append(ac.url_to_problem_name("https://atcoder.jp/contests/abc002/tasks/abc002_1")+" (サンプル問題2)")
+        u.append("https://atcoder.jp/contests/abc002/tasks/abc002_1")
     url3=st.text_input("問題ページのURLを入力してください(3問目)")
-    q.append(ac.url_to_problem_name(url3))
-    u.append(url3)
+    if url3!="":
+        q.append(ac.url_to_problem_name(url3))
+        u.append(url3)
+    else:
+        q.append(ac.url_to_problem_name("https://atcoder.jp/contests/abc003/tasks/abc003_1")+" (サンプル問題3)")
+        u.append("https://atcoder.jp/contests/abc003/tasks/abc003_1")
     url4=st.text_input("問題ページのURLを入力してください(4問目)")
-    q.append(ac.url_to_problem_name(url4))
-    u.append(url4)
+    if url4!="":
+        q.append(ac.url_to_problem_name(url4))
+        u.append(url4)
+    else:
+        q.append(ac.url_to_problem_name("https://atcoder.jp/contests/abc004/tasks/abc004_1")+" (サンプル問題4)")
+        u.append("https://atcoder.jp/contests/abc004/tasks/abc004_1")
     url5=st.text_input("問題ページのURLを入力してください(5問目)")
-    q.append(ac.url_to_problem_name(url5))
-    u.append(url5)
+    if url5!="":
+        q.append(ac.url_to_problem_name(url5))
+        u.append(url5)
+    else:
+        q.append(ac.url_to_problem_name("https://atcoder.jp/contests/abc005/tasks/abc005_1")+" (サンプル問題5)")
+        u.append("https://atcoder.jp/contests/abc005/tasks/abc005_1")
     s.append(st.text_input("受講者のAtCoder IDを入力してください(1人目)"))
     s.append(st.text_input("受講者のAtCoder IDを入力してください(2人目)"))
     s.append(st.text_input("受講者のAtCoder IDを入力してください(3人目)"))
@@ -45,10 +65,7 @@ def addelement(df):
 
 def makegraph():
     name='問題名'
-    element=[]
-    for question in q:
-        if question!="":
-            element.append(question)
+    element=[q[0], q[1], q[2], q[3], q[4]]
     df=pd.DataFrame({
         name: element
     })

@@ -51,8 +51,12 @@ def input_contents():
         s.append(student1)
     else:
         s.append("chokudai")
-    s.append(st.text_input("受講者のAtCoder IDを入力してください(2人目)"))
-    s.append(st.text_input("受講者のAtCoder IDを入力してください(3人目)"))
+    student2=st.text_input("受講者のAtCoder IDを入力してください(2人目)")
+    if student2!="":
+        s.append(student2)
+    student3=st.text_input("受講者のAtCoder IDを入力してください(3人目)")
+    if student3!="":
+        s.append(student3)
 
 def addelement(df):
     n=0

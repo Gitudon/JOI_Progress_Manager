@@ -43,15 +43,25 @@ def addelement(df):
         df[s[i]]=buf
     return df 
 
+def checker():
+    n=0
+    for question in q:
+        if question=="":
+            n+=1
+    if n>1:
+        return False
+    return True
+
 def makegraph():
     name='問題名'
-    df=pd.DataFrame({
-        name: [q[0], q[1], q[2], q[3], q[4]]
-    })
-    df=addelement(df)
-    df= df.set_index(name)
-    df = df.style.map(lambda x: 'background-color: #32cd32' if 'AC' in str(x) else 'background-color: #ffa500' if any(substring in str(x) for substring in ["WA", "TLE", "CE", "RE"]) else 'background-color: #ffffff')
-    printgraph(df)
+    if checker():
+        df=pd.DataFrame({
+            name: [q[0], q[1], q[2], q[3], q[4]]
+        })
+        df=addelement(df)
+        df= df.set_index(name)
+        df = df.style.map(lambda x: 'background-color: #32cd32' if 'AC' in str(x) else 'background-color: #ffa500' if any(substring in str(x) for substring in ["WA", "TLE", "CE", "RE"]) else 'background-color: #ffffff')
+        printgraph(df)
 
 def printgraph(df):
     st.write(df)

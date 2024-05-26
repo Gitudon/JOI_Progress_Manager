@@ -9,7 +9,8 @@ s=[]
 
 def message():
     st.title("問題進捗確認")
-    st.write("AtCoderの問題の進捗を確認することができます。表が出てこなかったらボタンを連打してください。")
+    st.write("AtCoderの問題の進捗を確認することができます。")
+    st.write("表が出てこなかったらボタンを連打してください。")
 
 def input_contents():
     global q, u

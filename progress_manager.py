@@ -10,7 +10,6 @@ s=[]
 def message():
     st.title("問題進捗確認")
     st.write("AtCoderの問題の進捗を確認することができます。")
-    st.write("表が出てこなかったらボタンを連打してください。")
 
 def input_contents():
     global q, u
@@ -78,6 +77,12 @@ def input_students():
     student3=st.text_input("受講者のAtCoder IDを入力してください(3人目)")
     if student3!="":
         s.append(student3)
+    student4=st.text_input("受講者のAtCoder IDを入力してください(4人目)")
+    if student4!="":
+        s.append(student4)
+    student5=st.text_input("受講者のAtCoder IDを入力してください(5人目)")
+    if student5!="":
+        s.append(student5)
     if s==[]:
         s.append("chokudai")
 
@@ -100,7 +105,7 @@ def makegraph():
     df=pd.DataFrame({
         name: element,
     })
-    name2="リンク"
+    name2="リンク(クリックで問題ページへ)"
     element2=u
     df2=pd.DataFrame({
         name: element,

@@ -97,7 +97,7 @@ def addelement(df):
 def makegraph():
     name='問題名'
     element=q
-    name2='URL'
+    name2='URL(クリックで開く)'
     url=u
     df=pd.DataFrame({
         name: element,
@@ -113,7 +113,7 @@ def printgraph(df):
     st.dataframe(
         df,
         column_config={
-            "URL": st.column_config.LinkColumn("URL"),
+            "URL(クリックで開く)": st.column_config.LinkColumn("URL(クリックで開く)"),
         },
     )
 

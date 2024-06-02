@@ -97,25 +97,32 @@ def addelement(df):
 def makegraph():
     name='問題名'
     element=q
-    name2='URL(クリックで開く)'
-    url=u
     df=pd.DataFrame({
         name: element,
-        name2: url
+    })
+    name2="リンク"
+    element2=u
+    df2=pd.DataFrame({
+        name: element,
+        name2: element2,
     })
     df=addelement(df)
-    df= df.set_index(name)
-    
+    # df= df.set_index(name)
     df = df.style.map(lambda x: 'background-color: #32cd32' if 'AC' in str(x) else 'background-color: #ffa500' if any(substring in str(x) for substring in ["WA", "TLE", "CE", "RE"]) else 'background-color: #ffffff')
-    printgraph(df)
-
-def printgraph(df):
     st.dataframe(
         df,
         column_config={
-            "URL(クリックで開く)": st.column_config.LinkColumn("URL(クリックで開く)"),
         },
+        hide_index=True,
     )
+    st.dataframe(
+        df2,
+        column_config={
+            name2:st.column_config.LinkColumn()
+        },
+        hide_index=True,
+    )
+    return
 
 def main():
     message()

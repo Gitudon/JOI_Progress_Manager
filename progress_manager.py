@@ -97,8 +97,11 @@ def addelement(df):
 def makegraph():
     name='問題名'
     element=q
+    name2='URL'
+    url=u
     df=pd.DataFrame({
-        name: element
+        name: element,
+        name2: url
     })
     df=addelement(df)
     df= df.set_index(name)

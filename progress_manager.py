@@ -105,11 +105,17 @@ def makegraph():
     })
     df=addelement(df)
     df= df.set_index(name)
+    
     df = df.style.map(lambda x: 'background-color: #32cd32' if 'AC' in str(x) else 'background-color: #ffa500' if any(substring in str(x) for substring in ["WA", "TLE", "CE", "RE"]) else 'background-color: #ffffff')
     printgraph(df)
 
 def printgraph(df):
-    st.write(df)
+    st.dataframe(
+        df,
+        column_config={
+            "URL": st.column_config.LinkColumn("URL"),
+        },
+    )
 
 def main():
     message()

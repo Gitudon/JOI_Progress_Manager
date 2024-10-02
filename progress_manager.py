@@ -14,7 +14,7 @@ def message():
 def input_contents():
     global q, u
     #ここに自動補完するか選択を入れる
-    select=st.selectbox(label="選択してください",options=("手動入力","A-四則演算", "A-条件分岐","B-文字列", "B-forループ", "C-リスト", "C- 1次予選過去問","S1-whileループ","S1-多重ループ","S1-多次元リスト","S2-ソート関数","S2-再帰関数"))
+    select=st.selectbox(label="選択してください",options=("手動入力","A-四則演算", "A-条件分岐","B-文字列", "B-forループ", "C-リスト", "C-1次予選過去問","S1-whileループ","S1-多重ループ","S1-多次元リスト","S2-組み込み関数","S2-組み込み関数(上級)","S2-ソート関数","S3-関数の定義","S3-再帰関数","S3-再帰関数(上級)"))
     if select=="手動入力":
         url1=st.text_input("問題ページのURLを入力してください(1問目)")
         if url1!="":
@@ -51,7 +51,7 @@ def input_contents():
             u=pb.B_for
         elif select=="C-リスト":
             u=pb.C_list
-        elif select=="C- 1次予選過去問":
+        elif select=="C-1次予選過去問":
             u=pb.C_kakomon
         elif select=="S1-whileループ":
             u=pb.S1_while
@@ -59,10 +59,18 @@ def input_contents():
             u=pb.S1_multi
         elif select=="S1-多次元リスト":
             u=pb.S1_multi_list
+        elif select=="S2-組み込み関数":
+            u=pb.S2_Built_in_functions
+        elif select=="S2-組み込み関数(上級)":
+            u=pb.S2_Built_in_functions_Advance
         elif select=="S2-ソート関数":
             u=pb.S2_sort
-        elif select=="S2-再帰関数":
-            u=pb.S2_recursive
+        elif select=="S3-関数の定義":
+            u=pb.S3_function
+        elif select=="S3-再帰関数":
+            u=pb.S3_recursive
+        elif select=="S3-再帰関数(上級)":
+            u=pb.S3_recursive_Advance
         for url in u:
             q.append(ac.url_to_problem_name(url))
 

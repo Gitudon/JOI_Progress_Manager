@@ -6,13 +6,14 @@ import problems as pb
 q=[]
 u=[]
 s=[]
+select="手動入力"
 
 def message():
     st.title("問題進捗確認")
     st.write("AtCoderの問題の進捗を確認することができます。")
 
 def input_contents():
-    global q, u
+    global q, u, select
     #ここに自動補完するか選択を入れる
     select=st.selectbox(label="選択してください",options=("手動入力","A-四則演算", "A-条件分岐","B-文字列", "B-forループ", "C-リスト", "C-1次予選過去問","S1-whileループ","S1-多重ループ","S1-多次元リスト","S2-組み込み関数","S2-組み込み関数(上級)","S2-ソート関数","S2-ソート関数(上級)","S3-関数の定義","S3-再帰関数","S3-再帰関数(上級)"))
     if select=="手動入力":
@@ -110,7 +111,7 @@ def addelement(df):
     return df
 
 def makegraph():
-    name='問題名'
+    name='問題名'+"("+select+")"
     element=q
     df=pd.DataFrame({
         name: element,

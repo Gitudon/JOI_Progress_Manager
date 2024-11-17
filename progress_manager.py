@@ -14,7 +14,6 @@ def message():
 
 def input_contents():
     global q, u, select
-    #ここに自動補完するか選択を入れる
     select=st.selectbox(label="選択してください",options=("手動入力","A-四則演算", "A-条件分岐","B-文字列", "B-forループ", "C-リスト", "C-1次予選過去問","S1-whileループ","S1-多重ループ","S1-多次元リスト","S2-組み込み関数","S2-組み込み関数(上級)","S2-ソート関数","S2-ソート関数(上級)","S3-関数の定義","S3-再帰関数","S3-再帰関数(上級)"))
     if select=="手動入力":
         url1=st.text_input("問題ページのURLを入力してください(1問目)")
@@ -123,7 +122,6 @@ def makegraph():
         name2: element2,
     })
     df=addelement(df)
-    # df= df.set_index(name)
     df = df.style.map(lambda x: 'background-color: #32cd32' if 'AC' in str(x) else 'background-color: #ffa500' if any(substring in str(x) for substring in ["WA", "TLE", "CE", "RE"]) else 'background-color: #ffffff')
     st.dataframe(
         df,

@@ -78,19 +78,19 @@ def input_contents():
 
 def input_students():
     global s
-    student1=st.text_input("受講者のAtCoder IDを入力してください(1人目)")
+    student1=st.text_input("AtCoder IDを入力してください(1人目)")
     if student1!="":
         s.append(student1)
-    student2=st.text_input("受講者のAtCoder IDを入力してください(2人目)")
+    student2=st.text_input("AtCoder IDを入力してください(2人目)")
     if student2!="":
         s.append(student2)
-    student3=st.text_input("受講者のAtCoder IDを入力してください(3人目)")
+    student3=st.text_input("AtCoder IDを入力してください(3人目)")
     if student3!="":
         s.append(student3)
-    student4=st.text_input("受講者のAtCoder IDを入力してください(4人目)")
+    student4=st.text_input("AtCoder IDを入力してください(4人目)")
     if student4!="":
         s.append(student4)
-    student5=st.text_input("受講者のAtCoder IDを入力してください(5人目)")
+    student5=st.text_input("AtCoder IDを入力してください(5人目)")
     if student5!="":
         s.append(student5)
     if s==[]:

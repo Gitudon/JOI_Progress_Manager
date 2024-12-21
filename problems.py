@@ -59,18 +59,18 @@ C_list=[
     "https://atcoder.jp/contests/joi2022yo1c/tasks/joi2022_yo1c_d"
 ]
 C_kakomon=[
-    "https://atcoder.jp/contests/joi2023yo1a/tasks/joi2023_yo1a_a",
-    "https://atcoder.jp/contests/joi2023yo1a/tasks/joi2023_yo1a_b",
-    "https://atcoder.jp/contests/joi2023yo1a/tasks/joi2023_yo1a_c",
-    "https://atcoder.jp/contests/joi2023yo1a/tasks/joi2023_yo1a_d",
-    "https://atcoder.jp/contests/joi2023yo1b/tasks/joi2023_yo1b_a",
-    "https://atcoder.jp/contests/joi2023yo1b/tasks/joi2023_yo1b_b",
-    "https://atcoder.jp/contests/joi2023yo1b/tasks/joi2023_yo1b_c",
-    "https://atcoder.jp/contests/joi2023yo1b/tasks/joi2023_yo1b_d",
-    "https://atcoder.jp/contests/joi2023yo1c/tasks/joi2023_yo1c_a",
-    "https://atcoder.jp/contests/joi2023yo1c/tasks/joi2023_yo1c_b",
-    "https://atcoder.jp/contests/joi2023yo1c/tasks/joi2023_yo1c_c",
-    "https://atcoder.jp/contests/joi2023yo1c/tasks/joi2023_yo1c_d"
+    "https://atcoder.jp/contests/joi2025yo1a/tasks/joi2025_yo1a_a",
+    "https://atcoder.jp/contests/joi2025yo1a/tasks/joi2025_yo1a_b",
+    "https://atcoder.jp/contests/joi2025yo1a/tasks/joi2025_yo1a_c",
+    "https://atcoder.jp/contests/joi2025yo1a/tasks/joi2025_yo1a_d",
+    "https://atcoder.jp/contests/joi2025yo1b/tasks/joi2025_yo1b_a",
+    "https://atcoder.jp/contests/joi2025yo1b/tasks/joi2025_yo1b_b",
+    "https://atcoder.jp/contests/joi2025yo1b/tasks/joi2025_yo1b_c",
+    "https://atcoder.jp/contests/joi2025yo1b/tasks/joi2025_yo1b_d",
+    "https://atcoder.jp/contests/joi2025yo1c/tasks/joi2025_yo1c_a",
+    "https://atcoder.jp/contests/joi2025yo1c/tasks/joi2025_yo1c_b",
+    "https://atcoder.jp/contests/joi2025yo1c/tasks/joi2025_yo1c_c",
+    "https://atcoder.jp/contests/joi2025yo1c/tasks/joi2025_yo1c_d"
 ]
 S1_while=[
     "https://atcoder.jp/contests/joi2019yo/tasks/joi2019_yo_a",

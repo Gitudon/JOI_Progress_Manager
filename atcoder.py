@@ -15,7 +15,10 @@ def url_to_problem_name(url):
         return ""
     html = requests.get(url)
     soup = BeautifulSoup(html.content, "html.parser")
+    #問題名のタイトルが4から始まる場合はエラーなのでその旨を表示
     for tag in soup.select("title"):
+        if tag.text[0] == "4":
+            return "エラー：もう一度実行してください"
         return tag.text
 
 def get_result_json(user_id):
@@ -28,7 +31,7 @@ def get_result_json(user_id):
     return data
 
 def get_result(url, data):
-    # urlからcontest_nameとproblem_nameを取得する
+    #urlからcontest_nameとproblem_nameを取得する
     if url=="":
         return ""
     parts = url.split("/")

@@ -17,9 +17,9 @@ def url_to_problem_name(url):
     soup = BeautifulSoup(html.content, "html.parser")
     #問題名のタイトルが4から始まる場合はエラーなのでその旨を表示
     for tag in soup.select("title"):
-        if tag.text[0] == "4":
-            return "エラー：もう一度実行してください"
-        return tag.text
+        while True:
+            if tag.text[0] != "4":
+                return tag.text
 
 def get_result_json(user_id):
     #user_idから結果を取得する

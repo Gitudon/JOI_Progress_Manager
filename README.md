@@ -1,5 +1,1 @@
-# 進捗管理用Webアプリ
-
-## 機能
-
-AtCoderにある問題のURLとユーザーIDを入力すると直近1か月の提出結果のうち最新のものを取得します。
+https://atcoder-progress-manager.streamlit.app/

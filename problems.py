@@ -54,9 +54,9 @@ C_list=[
     "https://atcoder.jp/contests/joi2021yo1a/tasks/joi2021_yo1a_c",
     "https://atcoder.jp/contests/joig2022-open/tasks/joig2022_a",
     "https://atcoder.jp/contests/joi2021yo1b/tasks/joi2021_yo1b_c",
-    "https://atcoder.jp/contests/joi2022yo1b/tasks/joi2022_yo1b_d",
     "https://atcoder.jp/contests/joi2020yo1b/tasks/joi2020_yo1b_c",
-    "https://atcoder.jp/contests/joi2022yo1c/tasks/joi2022_yo1c_d"
+    "https://atcoder.jp/contests/joi2022yo1c/tasks/joi2022_yo1c_d",
+    "https://atcoder.jp/contests/joi2022yo1b/tasks/joi2022_yo1b_d"
 ]
 C_kakomon=[
     "https://atcoder.jp/contests/joi2025yo1a/tasks/joi2025_yo1a_a",

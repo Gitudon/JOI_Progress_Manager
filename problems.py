@@ -135,11 +135,12 @@ S3_function=[
     "https://atcoder.jp/contests/abc375/tasks/abc375_b"
 ]
 S3_recursive=[
-    "https://atcoder.jp/contests/abc029/tasks/abc029_c",
+    "https://atcoder.jp/contests/abc247/tasks/abc247_c",
     "https://atcoder.jp/contests/abc043/tasks/abc043_a",
     "https://atcoder.jp/contests/abc273/tasks/abc273_a",
     "https://atcoder.jp/contests/tenka1-2015-qualb/tasks/tenka1_2015_qualB_a",
-    "https://atcoder.jp/contests/abc247/tasks/abc247_c",
+    "https://atcoder.jp/contests/abc389/tasks/abc389_b",
+    "https://atcoder.jp/contests/abc029/tasks/abc029_c",
     "https://atcoder.jp/contests/typical90/tasks/typical90_b",
     "https://atcoder.jp/contests/abc304/tasks/abc304_c",
     "https://atcoder.jp/contests/abc190/tasks/abc190_c",

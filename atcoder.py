@@ -3,23 +3,26 @@ from bs4 import BeautifulSoup
 import json
 import streamlit as st
 import time
+import problems as pb
 
 def unix_time():
     current_unix_time = int(time.time())
     one_month_ago = current_unix_time - (30 * 24 * 60 * 60)
     return one_month_ago
 
+# 2025-01-26現在上の方法が使用不能
 def url_to_problem_name(url):
-    #urlから問題名を取得する
-    if url=="":
-        return ""
-    html = requests.get(url)
-    soup = BeautifulSoup(html.content, "html.parser")
-    #問題名のタイトルが4から始まる場合はエラーなのでその旨を表示
-    for tag in soup.select("title"):
-        while True:
-            if tag.text[0] != "4":
-                return tag.text
+#     #urlから問題名を取得する
+#     if url=="":
+#         return ""
+#     html = requests.get(url)
+#     soup = BeautifulSoup(html.content, "html.parser")
+#     #問題名のタイトルが4から始まる場合はエラーなのでその旨を表示
+#     for tag in soup.select("title"):
+#         while True:
+#             if tag.text[0] != "4":
+#                 return tag.text
+    return pb.Problem_names[url]
 
 def get_result_json(user_id):
     #user_idから結果を取得する

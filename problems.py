@@ -14,12 +14,12 @@ A_calc=[
 ]
 A_if=[
     "https://atcoder.jp/contests/joi2021yo1b/tasks/joi2021_yo1b_a",
-    "https://atcoder.jp/contests/abc173/tasks/abc173_a",
     "https://atcoder.jp/contests/joi2023yo1a/tasks/joi2023_yo1a_b",
     "https://atcoder.jp/contests/joi2023yo1b/tasks/joi2023_yo1b_b",
     "https://atcoder.jp/contests/abc075/tasks/abc075_a",
     "https://atcoder.jp/contests/abc214/tasks/abc214_a",
     "https://atcoder.jp/contests/joi2021yo1c/tasks/joi2021_yo1c_a",
+    "https://atcoder.jp/contests/abc173/tasks/abc173_a",
     "https://atcoder.jp/contests/abc137/tasks/abc137_a",
     "https://atcoder.jp/contests/joi2020yo1a/tasks/joi2020_yo1a_a",
     "https://atcoder.jp/contests/joi2020yo1b/tasks/joi2020_yo1b_a",

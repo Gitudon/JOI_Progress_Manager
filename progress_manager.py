@@ -122,6 +122,7 @@ def makegraph():
         name: element,
         name2: element2,
     })
+    #中央揃えしたい
     df=addelement(df)
     df = df.style.map(lambda x: 'background-color: #32cd32' if 'AC' in str(x) else 'background-color: #ffa500' if any(substring in str(x) for substring in ["WA", "TLE", "CE", "RE"]) else 'background-color: #ffffff')
     st.dataframe(

@@ -19,6 +19,7 @@ def url_to_problem_name(url):
 
 def main():
     problem_names={}
+    # これはなに
     problem_categories = {
         "A_calc": pb.A_calc,
         # "A_if": pb.A_if,
